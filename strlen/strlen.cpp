@@ -5,6 +5,9 @@ size_t strlenx(const char* str) {
 	for (s = str; *s; ++s) {}
 	return(s - str);
 }
+
+
+
 int main(int argc, char** argv)
 {
 	const char* str = "hellojds";
