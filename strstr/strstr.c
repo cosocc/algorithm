@@ -10,6 +10,8 @@
 //needle -- 在 haystack 字符串内要搜索的小字符串。
 //返回值
 //该函数返回在 haystack 中第一次出现 含 needle 字符串的位置的所有字符，如果未找到则返回 null。
+
+
 #include <stdio.h>
 #include <string.h>
 
