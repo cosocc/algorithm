@@ -53,7 +53,7 @@ int kmp(const char* text, const char* pattern)
 
 int main(int argc, char* argv[]) {
 	char text[] = "ABC ABCDAB ABCDABCDABDE";
-	char pattern[] = "ABCDABD";
+	char pattern[] = "ABCDAB";
 	char* ch = text;
 	int i = kmp(text, pattern);
 	if (i >= 0) printf("matched @: %s\n", ch + i);
