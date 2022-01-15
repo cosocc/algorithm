@@ -14,7 +14,7 @@
 
 #include <stdio.h>
 #include <string.h>
-
+//test
 char* strstr1(const char* haystack, const char* needle) {
 	// if needle is empty return the full string
 	if (!*needle) return (char*)haystack;
