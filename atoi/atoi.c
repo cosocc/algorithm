@@ -13,7 +13,8 @@
 #include <stdlib.h>
 
 
-int atoi1(const char* str) {
+int atoi1(const char* str)
+{
 	int num = 0;
 	int sign = 1;
 	const int len = strlen(str);
