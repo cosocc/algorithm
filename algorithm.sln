@@ -17,6 +17,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "atoi", "atoi\atoi.vcxproj",
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "KMP", "KMP\KMP.vcxproj", "{1219AF85-E9FA-434B-82C1-53413D1ECB37}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Rabin_Karp", "Rabin_Karp\Rabin_Karp.vcxproj", "{1610F246-57B6-47B0-8294-CFF3365D7766}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -81,6 +83,14 @@ Global
 		{1219AF85-E9FA-434B-82C1-53413D1ECB37}.Release|x64.Build.0 = Release|x64
 		{1219AF85-E9FA-434B-82C1-53413D1ECB37}.Release|x86.ActiveCfg = Release|Win32
 		{1219AF85-E9FA-434B-82C1-53413D1ECB37}.Release|x86.Build.0 = Release|Win32
+		{1610F246-57B6-47B0-8294-CFF3365D7766}.Debug|x64.ActiveCfg = Debug|x64
+		{1610F246-57B6-47B0-8294-CFF3365D7766}.Debug|x64.Build.0 = Debug|x64
+		{1610F246-57B6-47B0-8294-CFF3365D7766}.Debug|x86.ActiveCfg = Debug|Win32
+		{1610F246-57B6-47B0-8294-CFF3365D7766}.Debug|x86.Build.0 = Debug|Win32
+		{1610F246-57B6-47B0-8294-CFF3365D7766}.Release|x64.ActiveCfg = Release|x64
+		{1610F246-57B6-47B0-8294-CFF3365D7766}.Release|x64.Build.0 = Release|x64
+		{1610F246-57B6-47B0-8294-CFF3365D7766}.Release|x86.ActiveCfg = Release|Win32
+		{1610F246-57B6-47B0-8294-CFF3365D7766}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

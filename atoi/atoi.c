@@ -17,9 +17,9 @@ int atoi1(const char* str)
 {
 	int num = 0;
 	int sign = 1;
-	const int len = strlen(str);
+	const int len = (int)strlen(str);
 	int i = 0;
-	while (str[i] == ' ' && i < len) i++;
+	while ((str[i] == ' ') && (i < len)) i++;
 	if (str[i] == '+') i++;
 	if (str[i] == '-')
 	{
