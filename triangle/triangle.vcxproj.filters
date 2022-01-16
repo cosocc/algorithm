@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Rabin_Karp.c">
+    <ClCompile Include="triangle.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
