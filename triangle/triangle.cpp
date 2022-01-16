@@ -31,18 +31,58 @@ void yanghui_triangle(const int n)
 			s = t; /* 打印一个系数，第 i+2 个是 0*/
 			if (j != i + 1)
 			{
-				printf("%d ", s);
+				printf("%d  ", s);
 			}
 		}
 		printf("\n");
 	}
 }
 
+void print_triangle(int a)
+{
+	int* (*data) = new int* [a];
+	for (int i = 0; i < a; ++i)
+	{
+		data[i] = new int[a];
+		for (int j = 0; j < a; ++j)
+		{
+			data[i][j] = 1;
+		}
+	}
+
+	for (int i = 1; i < a; i++)
+	{
+		for (int j = 1; j < i; j++)
+			data[i][j] = data[i - 1][j] + data[i - 1][j - 1];
+	}
+
+
+	for (int i = 0; i < a; i++)
+	{
+		for (int k = 0; k < 26 - 6 * i / 2; k++)
+		{
+			printf(" ");
+		}
+
+		for (int j = 0; j <= i; j++)
+			printf("%6d", data[i][j]);
+
+		printf("\n");
+	}
+
+	for (int i = 0; i < a; i++)
+		delete[] data[i];
+	data = nullptr;
+	delete[] data;
+}
+
 int main(int argc, char** argv)
 {
 
 
-	yanghui_triangle(10);
+	yanghui_triangle(9);
+	printf("\n \n \n");
+	print_triangle(10);
 	
 	return 0;
 }
