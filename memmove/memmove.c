@@ -37,6 +37,5 @@ int main(int argc, char** argv)
     printf("The string: %s\n", str1);
     memmove1(str1 + 2, str1, 4);
     printf("New string: %s\n", str1);
-
     return 0;
 }
