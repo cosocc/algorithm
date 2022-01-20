@@ -33,6 +33,7 @@ struct SimpleString
         other.max_size = 0;
     }
     //上一个右值引用构造函数是为operator 做铺垫的
+
     SimpleString& operator=(const SimpleString& other)
     {
         if (this == &other)
