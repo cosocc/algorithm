@@ -17,7 +17,6 @@ int main() {
         Cyberd t800;
         //主程序中捕获异常没有弹窗异常警报
         //主程序如果有异常捕获  则不会往下执行  而是直接跳转到析构函数中的异常捕获
-
         throw std::runtime_error{ "Come with me if you want to live.\n" }; //1
         int x = 2;
     }
