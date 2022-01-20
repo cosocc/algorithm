@@ -27,7 +27,7 @@ struct SimpleString
 	bool append_line(const char * x)
 	{
 		const auto x_len = strlen(x);
-		if (x_len+length >max_size)
+		if (x_len+length+2 >max_size)
 			return false;
 		strncpy(buffer + length, x, max_size - length);
 		length += x_len;
@@ -47,10 +47,10 @@ int main(int argc, char** argv)
 	SimpleString  strtest{ 115 }, strtest1{115};
 	strtest.append_line("beijing whaddya hear ?");
 	strtest.append_line("the capital of china!");
-	strtest.print("ritian.zhao:");//58
+	strtest.print("ritian.zhao:");
 
-	//if (!strtest.append_line("AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"))//70
-	//	printf("String was not big enough to append another message!");
+	if (!strtest.append_line("AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"))
+		printf("String was not big enough to append another message!");
 
 
 	strtest1.append_line("I live there for eight years!");
